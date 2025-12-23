@@ -24,7 +24,7 @@ A full-stack AI application that detects human pose landmarks in real-time using
 ## 📂 Project Structure
 
 ```text
-pose_app/
+Human_Pose_Estimator_app/
 ├── docker-compose.yml       # Orchestration file
 ├── backend/                 # API Service
 │   ├── Dockerfile
@@ -49,8 +49,8 @@ pose_app/
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/your-username/human-pose-estimator.git](https://github.com/your-username/human-pose-estimator.git)
-cd human-pose-estimator
+git clone https://github.com/Ankit-Navrang-Meshram/Human_Pose_Estimator_app.git
+cd Human_Pose_Estimator_app
 
 ```
 
