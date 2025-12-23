@@ -1,0 +1,25 @@
+
+services:
+  backend:
+    build: ./backend
+    container_name: pose_backend
+    ports:
+      - "8000:8000"
+    networks:
+      - pose_network
+
+  frontend:
+    build: ./frontend
+    container_name: pose_frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    networks:
+      - pose_network
+    environment:
+      - BACKEND_URL=http://backend:8000
+
+networks:
+  pose_network:
+    driver: bridge
